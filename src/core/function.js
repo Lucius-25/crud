@@ -16,10 +16,10 @@ export const disabledForm = (selector) => {
 export const enableForm = (selector) => {
     selector
       .querySelectorAll("input")
-      .forEach((el) => el.setAttribute("disabled", false));
+      .forEach((el) => el.removeAttribute("disabled"));
     selector
       .querySelectorAll("button")
-      .forEach((el) => el.setAttribute("disabled", false));
+      .forEach((el) => el.removeAttribute("disabled"));
   };
 
 export const toast = (title, icon = "success") => {
